@@ -1,0 +1,41 @@
+﻿<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+  <add-node path="/api/package[@name='io.codetail.animation']">
+    <class abstract="false" deprecated="not deprecated" final="false" name="ViewAnimationUtils" static="false" visibility="public" synchronized="true" extends="java.lang.Object">
+      <constructor deprecated="not deprecated" final="false" name="ViewAnimationUtils" static="false" type="io.codetail.animation.ViewAnimationUtils" visibility="public"/>
+      <field final="true" name="SCALE_UP_DURATION" type="int" static="true" visibility="public"/>
+      <method abstract="false" deprecated="not deprecated" final="false" name="createCircularReveal" native="false" return="io.codetail.animation.SupportAnimator" static="true" synchronized="false" visibility="public">
+        <parameter name="view" type="android.view.View"/>
+        <parameter name="centerX" type="int"/>
+        <parameter name="centerY" type="int"/>
+        <parameter name="startRadius" type="float"/>
+        <parameter name="endRadius" type="float"/>
+      </method>
+
+      <method abstract="false" deprecated="not deprecated" final="false" name="liftingFromBottom" native="false" return="void" static="true" synchronized="false" visibility="public">
+        <parameter name="view" type="android.view.View"/>
+        <parameter name="p0" type="float"/>
+        <parameter name="p1" type="float"/>
+        <parameter name="p2" type="int"/>
+        <parameter name="p3" type="int"/>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="liftingFromBottom" native="false" return="void" static="true" synchronized="false" visibility="public">
+        <parameter name="view" type="android.view.View"/>
+        <parameter name="p0" type="float"/>
+        <parameter name="p1" type="int"/>
+        <parameter name="p2" type="int"/>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="liftingFromBottom" native="false" return="void" static="true" synchronized="false" visibility="public">
+        <parameter name="view" type="android.view.View"/>
+        <parameter name="p0" type="float"/>
+        <parameter name="p1" type="int"/>
+      </method>
+    </class>
+  </add-node>
+</metadata>
